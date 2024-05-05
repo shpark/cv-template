@@ -11,3 +11,6 @@ vc.tex
 
 # cv.tex will be automatically generated
 cv.tex
+
+# Editors
+.vscode/
