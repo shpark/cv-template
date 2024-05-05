@@ -53,39 +53,30 @@
 % personal data
 \name{$name.first$}{$name.last$}
 
-\title{Résumé title}                               % optional, remove / comment the line if not wanted
-% \born{4 July 1776}                                 % optional, remove / comment the line if not wanted
-\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+2~(345)~678~901}
-\phone[fax]{+3~(456)~789~012}
-\email{john@doe.org}                               % optional, remove / comment the line if not wanted
-\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+$if(title)$
+\title{$title$}                               % optional, remove / comment the line if not wanted
+$endif$
+% Not supported now
+% \born{4 July 1776}                          % optional, remove / comment the line if not wanted
+$if(address)$
+\address{$address.street_number$}{$address.postcode_city$}{$address.country$}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+$endif$
+
+$for(phone)$
+\phone[$phone.type$]{$phone.number$}          % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+$endfor$
+
+$if(email)$
+\email{$email$}                               % optional, remove / comment the line if not wanted
+$endif$
+$if(homepage)$
+\homepage{$homepage$}                         % optional, remove / comment the line if not wanted
+$endif$
 
 % Social icons
 $for(social)$
 \social[$social.type$]{$social.username$}
 $endfor$
-
-% YouTube links can take several forms, depending on how your account and channel are set up.
-% See https://support.google.com/youtube/answer/6180214 for more information.
-\social[youtube]{c/jdoeschannel}                   % optional, remove / comment the line if not wanted; Custom URL             - can be shorted by removing 'c/'
-\social[youtube]{channel/XXXXXX}                   % optional, remove / comment the line if not wanted; Channel URL (ID-based) - can not be shortened
-\social[youtube]{user/jdoe}                        % optional, remove / comment the line if not wanted; Legacy username URL    - if jdoe is not already claimed by a Custom URL, can be shortened by removing 'user/'
-
-\social[twitch]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[tiktok]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[instagram]{jdoe}                           % optional, remove / comment the line if not wanted
-
-\social[soundcloud]{jdoe}                          % optional, remove / comment the line if not wanted
-
-\social[steam]{jdoe}                               % optional, remove / comment the line if not wanted
-\social[xbox]{jdoe}                                % optional, remove / comment the line if not wanted
-\social[playstation]{jdoe}                         % optional, remove / comment the line if not wanted
-\social[battlenet]{jdoe\#0000}                     % optional, remove / comment the line if not wanted
-\social[arxiv]{doe\_j\_1}                     % optional, remove / comment the line if not wanted
-\social[inspire]{0000000}                     % optional, remove / comment the line if not wanted
-
 
 \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 % \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file

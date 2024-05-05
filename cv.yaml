@@ -2,6 +2,20 @@
 name:
   first: "John"
   last: "Doe"
+title: "Résumé title"
+address:
+  street_number: "Street and number"
+  postcode_city: "Postcode City"
+  country: "Country"
+phone:
+  -
+    type: "mobile"
+    number: "+1-(234)-567-890"
+  -
+    type: "fixed"
+    number: "+3-(452)-789-012"
+email: john@doe.org
+homepage: "www.johndoe.com"
 social:
   - 
     type: "github"
