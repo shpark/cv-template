@@ -1,5 +1,5 @@
-cv
-==
+cv-template
+===========
 
 ## 0. Quick start
 
