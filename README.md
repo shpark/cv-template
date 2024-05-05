@@ -4,7 +4,13 @@ cv
 ## 0. Quick start
 
 ```
-lualatex cv.tex
+lualatex --shell-escape cv.tex
+```
+
+or
+
+```
+xelatex --enable-write18 cv.tex
 ```
 
 ## 1. Prerequisites
@@ -18,5 +24,11 @@ On Debian, install the following packages:
 ## 2. Compile
 
 ```
-lualatex cv.tex
+lualatex --shell-escape cv.tex
+```
+
+or
+
+```
+xelatex --enable-write18 cv.tex
 ```

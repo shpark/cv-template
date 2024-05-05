@@ -40,7 +40,14 @@
 \usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
 
 % VC bundle
+\ifxetex
 \immediate\write18{./vc.sh}
+\fi
+
+\ifluatex
+\directlua{os.execute("./vc.sh")}
+\fi
+
 \input{vc}
 
 % personal data
