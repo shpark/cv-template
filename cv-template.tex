@@ -51,7 +51,8 @@
 \input{vc}
 
 % personal data
-\name{John}{Doe}
+\name{$name.first$}{$name.last$}
+
 \title{Résumé title}                               % optional, remove / comment the line if not wanted
 % \born{4 July 1776}                                 % optional, remove / comment the line if not wanted
 \address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
@@ -62,28 +63,9 @@
 \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 
 % Social icons
-\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
-
-\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[codeberg]{jdoe}                            % optional, remove / comment the line if not wanted
-\social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
-\social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
-
-\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-\social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
-\social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
-
-\social[twitter]{ji\_doe}                          % optional, remove / comment the line if not wanted
-\social[mastodon]{mastodon.social/web/@user}       % optional, remove / comment the line if not wanted
-\social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
-\social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
-\social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
-\social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
-\social[discord]{jdoe\#0000}                       % optional, remove / comment the line if not wanted
+$for(social)$
+\social[$social.type$]{$social.username$}
+$endfor$
 
 % YouTube links can take several forms, depending on how your account and channel are set up.
 % See https://support.google.com/youtube/answer/6180214 for more information.

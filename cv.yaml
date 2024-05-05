@@ -1,0 +1,12 @@
+---
+name:
+  first: "John"
+  last: "Doe"
+social:
+  - 
+    type: "github"
+    username: "jdoe"
+  - 
+    type: "discord"
+    discord: "jdoe#0000"
+...
