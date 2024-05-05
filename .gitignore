@@ -1,0 +1,10 @@
+# VC-bundle
+vc.tex
+
+# LaTeX auxiliary outputs
+*.out
+*.log
+*.fls
+*.aux
+*.fdb_latexmk
+*.dvi
