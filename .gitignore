@@ -8,3 +8,6 @@ vc.tex
 *.aux
 *.fdb_latexmk
 *.dvi
+
+# cv.tex will be automatically generated
+cv.tex
