@@ -1,11 +1,15 @@
 cv-template
 ===========
 
+This is a CV template based on [moderncv](https://github.com/moderncv/moderncv)
+where you don't actually have to modify LaTeX document yourself, but instead
+fill in your informatino to a yaml file. You can take a look at the example
+[cv.yaml](./cv.yaml) to see how it works.
+
 ## 0. Quick start
 
 ```
-pandoc --template cv-template.tex -t latex cv.yaml
-lualatex --shell-escape cv.tex
+make
 ```
 
 ## 1. Prerequisites
