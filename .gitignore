@@ -8,6 +8,7 @@ vc.tex
 *.aux
 *.fdb_latexmk
 *.dvi
+*.synctex.gz
 
 # cv.tex will be automatically generated
 cv.tex
