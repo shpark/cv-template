@@ -7,6 +7,7 @@ address:
   street_number: "Street and number"
   postcode_city: "Postcode City"
   country: "Country"
+quote: "Some nice quote goes here"
 phone:
   -
     type: "mobile"
@@ -23,4 +24,54 @@ social:
   - 
     type: "discord"
     discord: "jdoe#0000"
+education:
+  - 
+    start: "Start date"
+    end: "End date"
+    degree: "Degree"
+    institution: "Institution"
+    city: "City"
+    grade: "Grade"
+    description: |
+      Description line 1 \
+      Description line 2 \
+      Description line 3
+  - 
+    start: "Start date"
+    end: "End date"
+    degree: "Degree"
+    institution: "Institution"
+    city: "City"
+    grade: "Grade"
+    description: |
+      Description line 1 \
+      Description line 2 \
+      Description line 3
+thesis:
+  -
+    type: Master's
+    title: Title
+    supervisors: "Supervisor"
+    description: "Description"
+experience:
+  - 
+    start: "Start date"
+    end: "End date"
+    title: "Title"
+    employer: "Employer"
+    city: "City"
+    short_description: "General description no longer than 1--2 lines."
+    long_description:
+      - "Description line 1"
+      - "Description line 2"
+      - "Description line 3"
+language:
+  - 
+    language: "Language 1"
+    level: "Level"
+    comment: "Comment"
+  - 
+    language: "Language 2"
+    level: "Level"
+    comment: "Comment"
 ...
