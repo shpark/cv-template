@@ -22,6 +22,7 @@ On Debian, install the following packages:
 - texlive-science
 - texlive-extra-utils
 - texlive-fonts-extra
+- texlive-lang-cjk (Required by luatexko)
 - gawk (required by ./vc.sh)
 
 ## 2. Compile

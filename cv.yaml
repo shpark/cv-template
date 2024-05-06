@@ -2,7 +2,7 @@
 name:
   first: "John"
   last: "Doe"
-title: "Résumé title"
+title: "안녕하세요"
 address:
   street_number: "Street and number"
   postcode_city: "Postcode City"
