@@ -3,7 +3,7 @@ cv-template
 
 This is a CV template based on [moderncv](https://github.com/moderncv/moderncv)
 where you don't actually have to modify LaTeX document yourself, but instead
-fill in your informatino to a yaml file. You can take a look at the example
+fill in your information to a yaml file. You can take a look at the example
 [cv.yaml](./cv.yaml) to see how it works.
 
 This template is inspired by other structured CV templates, especially,
