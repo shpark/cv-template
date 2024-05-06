@@ -34,20 +34,12 @@ template.
 pandoc --template cv-template.tex -t latex cv.yaml
 ```
 
-Then, compile generated `cv.tex` using your favorite `xelatex` or `lualatex`:
-
-
-```
-lualatex --shell-escape cv.tex
-```
-
-or
+Then, use `latexmk` and `lualatex` to compile document into PDF.
 
 ```
-xelatex --enable-write18 cv.tex
+latexmk -lualatex -pdflua cv.tex
 ```
 
 ## TODOs
 
 - [ ] Bibliography support
-- [ ] Try `latexmk`
