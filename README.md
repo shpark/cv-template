@@ -24,6 +24,9 @@ On Debian, install the following packages:
 - texlive-fonts-extra
 - texlive-lang-cjk (Required by luatexko)
 - gawk (required by ./vc.sh)
+- make
+- latexmk
+- pandoc
 
 ## 2. Compile
 
